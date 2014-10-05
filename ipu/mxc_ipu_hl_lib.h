@@ -95,11 +95,7 @@ extern "C"{
 
 #include <linux/version.h>
 
-#if LINUX_VERSION_CODE > KERNEL_VERSION(2,6,35)
 #include "ipu.h"
-#else
-#include <linux/ipu.h>
-#endif
 
 #include <linux/mxcfb.h>
 

@@ -36,11 +36,7 @@
 #include <sys/types.h>
 #include <linux/version.h>
 
-#if LINUX_VERSION_CODE > KERNEL_VERSION(2,6,35)
 #include "ipu.h"
-#else
-#include <linux/ipu.h>
-#endif
 
 int fd_ipu = -1;
 static int open_count = 0;
